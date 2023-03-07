@@ -40,7 +40,9 @@ public class Gaulois {
 		Gaulois asterix = new Gaulois("Asterix", 8);
 		System.out.println(asterix.getNom());
 		System.out.println(asterix.prendreParole());
-		System.out.println(asterix.parler("Salut, moi c'est Asterix"));
+		asterix.parler("Salut, moi c'est Asterix");
+		Romain cesar = new Romain("Cesar", 4);
+		asterix.frapper(cesar);
 		
 	}
 	

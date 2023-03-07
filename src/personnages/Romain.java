@@ -29,4 +29,14 @@ public class Romain {
 			parler("J'abandonne...");
 		}
 	}
+	
+	public static void main(String[] args) {
+		Romain cesar = new Romain("Cesar", 4);
+		System.out.println(cesar.getNom());
+		System.out.println(cesar.prendreParole());
+		cesar.recevoirCoup(8);
+		
+		
+		
+	}
 }
