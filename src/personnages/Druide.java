@@ -1,9 +1,12 @@
 package personnages;
 
+import java.util.Random;
+
 public class Druide {
 	private String nom;
 	private int effetPotionMin;
 	private int effetPotionMax;
+	private int forcePotion = 1;
 	
 	public Druide(String nom, int effetPotionMin, int effetPotionMax) {
 		this.nom = nom;
@@ -22,5 +25,22 @@ public class Druide {
 	
 	private String prendreParole() {
 		return "Le druide " + nom + " : ";
+	}
+	
+	public void preparePotion() {
+		/// comprend pas pourquoi la fonction nextInt ne se definit pas
+		Random random = new nextInt(this.effetPotionMax);
+		
+		/// askip on peut pas utilisé de > sur un nombre random
+		if (random > 7) {
+			return parler("J'ai preparé une super potion de force");
+		} else {
+			return parler("Je n'ai pas reussis à trouver les ingredients, ma portion est seulement de force");
+		}
+	}
+	
+	public static void main(String[] args) {
+		Druide panoramix = new Druide("Panoramix", 5, 10);
+		
 	}
 }
