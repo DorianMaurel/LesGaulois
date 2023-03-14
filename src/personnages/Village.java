@@ -41,8 +41,8 @@ public class Village {
 	
 	public static void main(String[] args) {
 		Village village = new Village("Village des Irréductible", 30);
-		///Gaulois gaulois1 = village.trouverHabitant(30);
-		/// Le max a été atteind
+		/// Gaulois gaulois1 = village.trouverHabitant(30);
+		/// Le max a été atteint
 		Chef abraracourcix = new Chef("Abraracourcix", 6, village);
 		village.setChef(abraracourcix);
 		Gaulois asterix = new Gaulois("Asterix", 8);
