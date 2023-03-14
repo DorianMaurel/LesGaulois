@@ -8,6 +8,7 @@ public class Druide {
 	private int effetPotionMax;
 	private int forcePotion = 1;
 	
+	
 	public Druide(String nom, int effetPotionMin, int effetPotionMax) {
 		this.nom = nom;
 		this.effetPotionMin = effetPotionMin;
@@ -27,20 +28,21 @@ public class Druide {
 		return "Le druide " + nom + " : ";
 	}
 	
-	public void preparePotion() {
-		/// comprend pas pourquoi la fonction nextInt ne se definit pas
-		Random random = new nextInt(this.effetPotionMax);
+	///public String preparerPotion() {
+		/// a faire 
+	///	Random random = new Random(this.effetPotionMax);
 		
-		/// askip on peut pas utilisé de > sur un nombre random
-		if (random > 7) {
-			return parler("J'ai preparé une super potion de force");
-		} else {
-			return parler("Je n'ai pas reussis à trouver les ingredients, ma portion est seulement de force");
-		}
-	}
+	///	if (random >= 7) {
+		///	return parler("J'ai preparé une super potion de force");
+	///	} else {
+		///	return parler("Je n'ai pas reussis à trouver tous les ingredients, ma potion est seulement de force");
+	///	}
+///	}
+	
 	
 	public static void main(String[] args) {
 		Druide panoramix = new Druide("Panoramix", 5, 10);
+		
 		
 	}
 }
