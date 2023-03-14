@@ -36,7 +36,6 @@ public class Village {
 			Gaulois gaulois = trouverHabitant(i);
 			   System.out.println("- " + gaulois.getNom());
 			}
-		
 	}
 	
 	
