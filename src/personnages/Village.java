@@ -10,7 +10,6 @@ public class Village {
 	public Village(String nom, int nbVillageoisMaximum) {
 		this.nom = nom;
 		this.villageois = new Gaulois[nbVillageoisMaximum];
-		this.nbVillageois = nbVillageois;
 	}
 	
 	public void setChef(Chef chef) {
@@ -51,6 +50,7 @@ public class Village {
 		Village.ajouterHabitant(obelix);
 		
 		Village.afficherVillageois();
+		System.out.println(Village.trouverHabitant(1));
 
 	}
 }
