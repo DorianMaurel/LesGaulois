@@ -28,6 +28,9 @@ public class Druide {
 		return "Le druide " + nom + " : ";
 	}
 	
+	
+	// A FAIRE CAR ARRIVE PA A FAIRE L'OBJET RANDOM
+	
 	///public String preparerPotion() {
 		/// a faire 
 	///	Random random = new Random(this.effetPotionMax);

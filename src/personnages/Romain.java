@@ -42,7 +42,7 @@ public class Romain {
 		if (nbEquipement >= 2) {
 			return "Le soldat " + getNom() +" est déjà bien protégé !";
 		} else if (equipement[nbEquipement] == stuff && equipement[nbEquipement] != null) {
-			return "Le soldat " + getNom() + " possede déja un " + equipement[0];
+			return "Le soldat " + getNom() + " possede déja un " + equipement[nbEquipement];
 		}
 		
 		switch (stuff) {
@@ -53,7 +53,7 @@ public class Romain {
 				equiperEquipement(stuff);
 				break;
 		}
-		return "Le soldat " + getNom() + "s'équipe avec un" + equipement[nbEquipement];
+		return "Le soldat " + getNom() + "s'équipe avec un" + stuff;
 	}
 
 	private void equiperEquipement(Equipement stuff) {
@@ -85,5 +85,9 @@ public class Romain {
 
 		//TEST DE LA FOCTION sEquiper
 		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.CASQUE);
+		minus.sEquiper(Equipement.BOUCLIER);
+		minus.sEquiper(Equipement.CASQUE);
+
 	}
 }
